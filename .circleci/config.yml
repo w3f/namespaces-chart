@@ -71,5 +71,4 @@ workflows:
             tags:
               only: /v[0-9]+(\.[0-9]+)*/
           requires:
-            - publishImage
             - publishChart
