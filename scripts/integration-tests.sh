@@ -29,7 +29,7 @@ run_tests() {
 }
 
 teardown() {
-    helm del --purge nstest
+    helm del nstest
 }
 
 main(){
