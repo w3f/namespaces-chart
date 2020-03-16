@@ -3,7 +3,7 @@ version: 2
 jobs:
   lint:
     docker:
-      - image: web3f/ci-commons:v1.8.0
+      - image: web3f/ci-commons:v2.0.1
     steps:
       - checkout
       - run:
@@ -12,7 +12,7 @@ jobs:
 
   integrationTests:
     docker:
-      - image: web3f/ci-commons:v1.8.0
+      - image: web3f/ci-commons:v2.0.1
     steps:
       - checkout
       - setup_remote_docker
@@ -23,7 +23,7 @@ jobs:
 
   publishChart:
     docker:
-      - image: web3f/ci-commons:v1.8.0
+      - image: web3f/ci-commons:v2.0.1
     steps:
       - checkout
       - run:
